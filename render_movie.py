@@ -90,29 +90,6 @@ pipeline.modifiers.append(transparencyModifier)
 pipeline.compute()
 pipeline.add_to_scene()
 
-#
-#
-# type_list = pipeline.source.data.particles.particle_types.types
-# Nparticletypes = 5593
-# interval = (Nparticletypes-1)/(8)
-#
-# for i in range(Nparticletypes):
-# 	if i==0:
-# 		type_list[0].radius = 0.5
-# 		type_list[0].color = (0.905882353, 0.905882353, 0.905882353)
-# 	elif i>=1 and i<interval*3+1:
-# 		type_list[i].radius = 0.5
-# 		type_list[i].color = (0.39, 0.39, 0.39)
-# 	elif i>=interval*3+1 and i<(interval*5)+1:
-# 		type_list[i].radius = 0.5
-# 		type_list[i].color = (1, 0, 0)
-# 	elif i>=1+(interval*5):
-# 		type_list[i].radius = 0.5
-# 		type_list[i].color = (0.39, 0.39, 0.39)
-# pipeline.compute()
-# pipeline.add_to_scene()
-# pipeline.source.data.cell.vis.render_cell = False
-#
 numFrames = pipeline.source.num_frames
 useFrame = numFrames															# event frame to be rendered
 # outName = 'testrun.png'c
